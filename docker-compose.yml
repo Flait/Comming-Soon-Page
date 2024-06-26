@@ -1,6 +1,6 @@
 services:
   web:
-    build: .
+    build: ./docker/apache
     ports:
       - "8000:80"
     volumes:
@@ -17,3 +17,8 @@ services:
     ports:
       - "8025:8025"
       - "1025:1025"
+
+  proxy:
+    build: ./docker/proxy-server
+    ports:
+      - "3000:3000"
