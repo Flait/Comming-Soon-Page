@@ -1,4 +1,5 @@
 Estimated time spent on this project would be arround 7 hours from the opening of the task.
+
 Features:
 - responsive html + sass made according to figma (I need to utilize sass better AI was heavily used to generate the sass + html)
 - time countdown
