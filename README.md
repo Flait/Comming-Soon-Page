@@ -6,7 +6,7 @@ Features:
 - dockerized apache + php, proxy to handle cors, mailhog to test emails
 - phpstan for php
 
-How to run
+How to run (Tested on arch linux)
 1. docker-compose build
 2. docker-compose up -d
 3. Access the appication:
