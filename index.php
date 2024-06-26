@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +10,12 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <?php
+    if (isset($_SESSION['message'])) {
+        echo "<div class='flash-message'>" . $_SESSION['message'] . "</div>";
+        unset($_SESSION['message']);
+    }
+    ?>
     <header>
         <img src="images/logo.png" alt="Logo" class="logo">
         <div class="price" id="price">Cena: <b>...</b> BTC / USD</div>
