@@ -1,0 +1,19 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html
+      - ./logs:/var/log/apache2
+    environment:
+      - APACHE_RUN_USER=${APACHE_RUN_USER}
+      - APACHE_RUN_GROUP=${APACHE_RUN_GROUP}
+      - MAILHOG_HOST=${MAILHOG_HOST}
+      - MAILHOG_PORT=${MAILHOG_PORT}
+
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"
+      - "1025:1025"

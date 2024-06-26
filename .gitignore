@@ -1,0 +1,12 @@
+# Logs and temp files
+/logs
+/tmp
+
+# Composer dependencies
+/vendor
+
+# Ignore mailhog log files
+/mailhog_data/
+
+# Ignore msmtp log file
+/var/log/msmtp.log

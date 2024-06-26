@@ -1,0 +1,13 @@
+# msmtprc configuration file
+
+# Default
+defaults
+auth           off
+tls            off
+logfile        /var/log/msmtp.log
+
+# SMTP account
+account        default
+host           ${MAILHOG_HOST}
+port           ${MAILHOG_PORT}
+from           no-reply@example.com

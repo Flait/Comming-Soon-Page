@@ -1,0 +1,9 @@
+parameters:
+    level: max
+    paths:
+        - src
+        - subscribe.php
+    excludePaths:
+        - tests
+        - vendor
+    # Add any additional configuration as needed

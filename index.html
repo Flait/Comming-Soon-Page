@@ -16,11 +16,13 @@
             <div class="countdown" id="countdown">11 dní : 16 hodin : 23 minut</div>
             <h1>Už se nemůžete dočkat? Brzy budeme&nbsp;live...</h1>
             <div class="newsletter">
-                <label for="email">Přihlášení k newsletteru</label>
-                <div class="input-container">
-                    <input type="email" id="email" placeholder="Email">
-                    <button>Přihlásit</button>
-                </div>
+                <form action="php/subscribe.php" method="POST">
+                    <label for="email">Přihlášení k newsletteru</label>
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                        <button type="submit">Přihlásit</button>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="rocket">
