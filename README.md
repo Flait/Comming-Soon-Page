@@ -1,5 +1,5 @@
 Features:
-- responsive html + sass made according to figma
+- responsive html + sass made according to figma (I need to utilize sass better AI was heavily used to generate the sass + html)
 - time countdown
 - subscribe to newsletter by sending email
 - load price of btc from 3rd party API
