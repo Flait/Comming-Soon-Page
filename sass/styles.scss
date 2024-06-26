@@ -1,0 +1,235 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #FFF7EF;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1440px;
+    padding: 20px 0;
+
+    .logo {
+        width: 214px;
+        height: auto;
+    }
+
+    .price {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #0F415E;
+        text-align: right;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1440px;
+    margin-top: 20px;
+
+    .content {
+        flex: 1;
+        max-width: 50%;
+
+        .countdown {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 48px;
+            color: #EB5757;
+            margin: 20px 0;
+        }
+
+        h1 {
+            min-width: 565px;
+            font-weight: 700;
+            font-size: 72px;
+            line-height: 108px;
+            color: #0F415E;
+            margin: 20px 0;
+        }
+
+        .newsletter {
+            margin: 40px 0;
+
+            label {
+                display: block;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+                color: #0F415E;
+                margin-bottom: 10px;
+            }
+
+            .input-container {
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+
+                input {
+                    width: calc(100% - 174px);
+                    padding: 12px 20px;
+                    border: 1px solid #0F415E;
+                    border-radius: 12px 0 0 12px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #0F415E;
+                }
+
+                button {
+                    width: 174px;
+                    background: #EB5757;
+                    border: 1px solid #EB5757; /* Adding border around the button */
+                    border-radius: 0 12px 12px 0;
+                    color: #FFF;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    cursor: pointer;
+                    padding: 12px 20px; /* Adjusting padding for better alignment */
+                }
+            }
+        }
+    }
+
+    .rocket {
+        flex: 1;
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            max-width: 470px;
+            height: auto;
+        }
+    }
+}
+
+footer {
+    margin-top: 40px;
+    width: 90%;
+    max-width: 1440px;
+    text-align: center;
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 40px;
+
+        a {
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    .copyright {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #828282;
+    }
+}
+@media (max-width: 1200px) {
+    main {
+        .content {
+            h1 {
+                min-width: 393px;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 75px;
+                color: #0F415E;
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+
+        .content {
+            max-width: 100%;
+            text-align: center;
+
+            h1 {
+                font-size: 48px;
+                line-height: 72px;
+            }
+
+            .countdown {
+                font-size: 24px;
+                line-height: 36px;
+            }
+
+            .newsletter {
+                width: 100%;
+                padding: 0 20px; /* Added padding for better spacing */
+            
+                label {
+                    font-size: 20px; /* Adjusted font size for better readability */
+                    line-height: 30px;
+                    color: #0F415E;
+                    margin-bottom: 10px;
+                }
+    
+                .input-container {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 10px;
+    
+                    input {
+                        width: 80%;
+                        padding: 12px 20px;
+                        border-radius: 12px; /* Rounded corners on both sides */
+                        margin-bottom: 10px;
+                        border: 1px solid #0F415E;
+                    }
+    
+                    button {
+                        width: 80%;
+                        padding: 12px 20px;
+                        border-radius: 12px; /* Rounded corners on both sides */
+                        background: #EB5757;
+                        border: 1px solid #EB5757;
+                        color: #FFF;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 24px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .rocket {
+            flex: 1;
+            max-width: 80%; /* Adjusted to fit better on small screens */
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 60%; /* Adjusted size for better fit */
+                height: auto;
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+}
